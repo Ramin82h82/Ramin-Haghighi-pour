@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پروفایل شخصی و تحصیلی</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.9;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 30px auto;
+    padding: 0 18px;
+}
+
+.card {
+    background: white;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #1d4ed8;
+    font-size: 20px;
+    margin-bottom: 18px;
+    border-right: 4px solid #2563eb;
+    padding-right: 12px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #dbeafe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+}
+
+.info {
+    flex: 1;
+    min-width: 220px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.info strong {
+    color: #334155;
+}
+
+.major {
+    background: #eff6ff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+th, td {
+    padding: 13px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+th {
+    background: #2563eb;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.job-list {
+    list-style: none;
+}
+
+.job-list li {
+    padding: 13px;
+    margin-bottom: 10px;
+    background: #f8fafc;
+    border-radius: 9px;
+    border-right: 4px solid #2563eb;
+}
+
+.done {
+    color: #15803d;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    color: white;
+    margin-top: 35px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 21px;
+    }
+
+    .card {
+        padding: 17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>سامانه اطلاعات شخصی و تحصیلی</h1>
+    <p>معرفی مشخصات، برنامه درسی و سوابق کاری</p>
+</header>
+
+<div class="container">
+
+    <section class="card">
+        <h2>اطلاعات شخصی</h2>
+
+        <div class="profile">
+            <div class="avatar">👨‍🎓</div>
+
+            <div class="info">
+                <p><strong>نام و نام خانوادگی:</strong> امیرحسین محمدی</p>
+                <p><strong>سن:</strong> ۲۳ سال</p>
+                <p><strong>شماره تماس:</strong> ۰۹۱۲۱۲۳۴۵۶۷</p>
+                <p><strong>ایمیل:</strong> amir.mohammadi@example.com</p>
+                <p><strong>شهر محل سکونت:</strong> تهران</p>
+            </div>
+        </div>
+
+        <div class="major">
+            <p><strong>دانشگاه:</strong> دانشگاه آزاد اسلامی</p>
+            <p><strong>رشته تحصیلی:</strong> مهندسی کامپیوتر</p>
+            <p><strong>مقطع:</strong> کارشناسی</p>
+            <p><strong>ترم تحصیلی:</strong> ترم ششم</p>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>برنامه هفتگی درسی</h2>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>روز</th>
+                        <th>نام درس</th>
+                        <th>ساعت کلاس</th>
+                        <th>نام استاد</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>شنبه</td>
+                        <td>پایگاه داده</td>
+                        <td>۸ تا ۱۰</td>
+                        <td>دکتر احمدی</td>
+                    </tr>
+
+                    <tr>
+                        <td>یکشنبه</td>
+                        <td>مهندسی نرم‌افزار</td>
+                        <td>۱۰ تا ۱۲</td>
+                        <td>مهندس رضایی</td>
+                    </tr>
+
+                    <tr>
+                        <td>دوشنبه</td>
+                        <td>شبکه‌های کامپیوتری</td>
+                        <td>۸ تا ۱۰</td>
+                        <td>دکتر کریمی</td>
+                    </tr>
+
+                    <tr>
+                        <td>سه‌شنبه</td>
+                        <td>هوش مصنوعی</td>
+                        <td>۱۲ تا ۱۴</td>
+                        <td>دکتر محمدی</td>
+                    </tr>
+
+                    <tr>
+                        <td>چهارشنبه</td>
+                        <td>سیستم عامل</td>
+                        <td>۱۰ تا ۱۲</td>
+                        <td>مهندس حسینی</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>سوابق شغلی و فعالیت‌ها</h2>
+
+        <ul class="job-list">
+            <li>
+                <strong>طراحی وب‌سایت شخصی</strong>
+                <p>طراحی و پیاده‌سازی یک وب‌سایت با استفاده از HTML و CSS</p>
+                <span class="done">✓ تکمیل شده</span>
+            </li>
+
+            <li>
+                <strong>کارآموزی در شرکت نرم‌افزاری</strong>
+                <p>همکاری در بخش طراحی رابط کاربری و توسعه وب</p>
+                <span class="done">✓ تکمیل شده</span>
+            </li>
+
+            <li>
+                <strong>مدیریت شبکه‌های اجتماعی</strong>
+                <p>تولید محتوا و مدیریت صفحه اینستاگرام یک مجموعه</p>
+                <span class="done">✓ تکمیل شده</span>
+            </li>
+
+            <li>
+                <strong>پروژه طراحی پایگاه داده</strong>
+                <p>طراحی و پیاده‌سازی سیستم مدیریت اطلاعات دانشجویان</p>
+                <span style="color:#d97706;font-size:13px;font-weight:bold;">
+                    ● در حال انجام
+                </span>
+            </li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>تمامی اطلاعات این صفحه فرضی هستند.</p>
+    <p>طراحی شده با HTML و CSS</p>
+</footer>
+
+</body>
+</html>
